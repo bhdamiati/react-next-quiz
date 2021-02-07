@@ -28,7 +28,7 @@ export default function Home() {
             <h1>UnderTale</h1>
           </Widget.Header>
           <Widget.Content>
-            <form onSubmit={function(event) {
+            <form onSubmit={function (event) {
               event.preventDefault();
               router.push(`/quiz?name=${name}`);
             }}
