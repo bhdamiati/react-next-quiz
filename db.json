@@ -1,28 +1,30 @@
 {
     "bg": "assets/images/space_ghost_undertale.jpeg",
-    "title": "Quiz CSS da Alura",
-    "description": "Teste os seus conhecimentos sobre CSS e vamos ver quantos layouts você vai deixar de quebrar",
+    "title": "Undertale Quiz",
+    "description": "Test your knowledge about Undertale.",
     "questions": [
       {
-        "image": "https://media.giphy.com/media/xUOxf3yDKCuwpOlT3i/giphy.gif",
-        "title": "Como fazer um seletor por id via CSS?",
-        "description": "Essa é pra aquecer",
-        "answer": 2,
+        "image": "https://media1.tenor.com/images/81763732e6b419909b27df3b3c982872/tenor.gif?itemid=5413221",
+        "title": "Who is the first monster we meet at the very beginning of the game?",
+        "description": "You shouldn't judge a book by its cover.",
+        "answer": 1,
         "alternatives": [
-          ".elemento",
-          "*elemento",
-          "#elemento",
-          "%elemento"
+          "Asgore",
+          "Flowey",
+          "Toriel",
+          "Sans"
         ]
       },
       {
-        "image": "https://media.giphy.com/media/13FrpeVH09Zrb2/giphy.gif",
-        "title": "Como fazer um background gradiente com css?",
-        "description": "Faz tempo em haha",
+        "image": "https://media1.tenor.com/images/30c1c94a4958bc0474433c57229453a3/tenor.gif?itemid=14568050",
+        "title": "Which classic game was the major inspiration in the making of Undertale?",
+        "description": "Ness is my name, baseball is my game!",
         "answer": 0,
         "alternatives": [
-           "background: linear-gradient(#e66465, #9198e5);",
-           "background: gradient(#e66465, #9198e5);"
+           "Mother 2 - EarthBound",
+           "Arkanoid",
+           "Chrono Trigger",
+           "Space Control II - The Ur'Quan Masters"
         ]
       }
     ],
@@ -36,7 +38,7 @@
         "mainBg": "#011B3E",
         "contrastText": "#FFFFFF",
         "highlightText": "#FFFF00",
-        "wrong": "#FF5722",
+        "wrong": "#FF0000",
         "success": "#4CAF50"
       },
       "borderRadius": "0px"

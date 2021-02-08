@@ -23,7 +23,7 @@ const Widget = styled.div`
 
 Widget.Header = styled.header`
   display: flex;
-  justify-content: flex-start;
+  justify-content: center;
   align-items: center;
   padding: 18px 32px;
   border-bottom: 5px solid ${({ theme }) => theme.colors.secondary};
