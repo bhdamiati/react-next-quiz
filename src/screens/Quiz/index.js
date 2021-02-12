@@ -13,6 +13,7 @@ function ResultWidget({ results }) {
   return (
     <Widget>
       <Widget.Header>
+        <BackLinkArrow href="/" />
         Tela de Resultado
       </Widget.Header>
 
@@ -81,7 +82,6 @@ function QuestionWidget({
   return (
     <Widget>
       <Widget.Header>
-        <BackLinkArrow href="/" />
         <h3>
           {`Question ${questionIndex + 1} of ${totalQuestions}`}
         </h3>
