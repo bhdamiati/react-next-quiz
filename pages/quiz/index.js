@@ -1,14 +1,16 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import db from '../db.json';
-import Widget from '../src/components/Widget';
-import QuizLogo from '../src/components/QuizLogo';
-import QuizBackground from '../src/components/QuizBackground';
-import QuizContainer from '../src/components/QuizContainer';
-import AlternativesForm from '../src/components/AlternativesForm';
-import Button from '../src/components/Button';
+import db from '../../db.json';
+import Widget from '../../src/components/Widget';
+import QuizLogo from '../../src/components/QuizLogo';
+import QuizBackground from '../../src/components/QuizBackground';
+import QuizContainer from '../../src/components/QuizContainer';
+import AlternativesForm from '../../src/components/AlternativesForm';
+import Button from '../../src/components/Button';
 
 function ResultWidget({ results }) {
+  const responseStyle = { padding: '10px 5px' };
+
   return (
     <Widget>
       <Widget.Header>
@@ -19,25 +21,16 @@ function ResultWidget({ results }) {
         <p>
           Você Acertou
           {' '}
-          {/* {results.reduce((somatoriaAtual, resultAtual) => {
-            const isAcerto = resultAtual === true;
-            if (isAcerto) {
-              return somatoriaAtual + 1;
-            }
-            return somatoriaAtual;
-          }, 0)} */}
-
-          {/*
-            Filter here takes the results array and only return the items with value === true.
-            Then counts array length and get the number of correct answers.
-          */}
           {results.filter((x) => x).length}
           {' '}
           Perguntas
         </p>
         <ul>
           {results.map((result, index) => (
-            <li key={`result__${result}`}>
+            <Widget.Result
+              key={`result__${result}`}
+              style={result === true ? { borderColor: 'green' } : { borderColor: 'red' }}
+            >
               #
               {index + 1}
               {' '}
@@ -45,7 +38,7 @@ function ResultWidget({ results }) {
               {result === true
                 ? 'Acertou'
                 : 'Errou'}
-            </li>
+            </Widget.Result>
           ))}
         </ul>
       </Widget.Content>
@@ -92,7 +85,6 @@ function QuestionWidget({
   return (
     <Widget>
       <Widget.Header>
-        {/* <BackLinkArrow href="/" /> */}
         <h3>
           {`Question ${questionIndex + 1} of ${totalQuestions}`}
         </h3>
@@ -143,6 +135,7 @@ function QuestionWidget({
                   name={questionId}
                   onChange={() => setSelectedAlternative(alternativeIndex)}
                   type="radio"
+                  checked={isSelected}
                 />
                 {alternative}
               </Widget.Topic>
@@ -154,8 +147,6 @@ function QuestionWidget({
           >
             Confirmar
           </Button>
-          {/* {isQuestionSubmited && isCorrect && <p>Você Acertou!</p>}
-          {isQuestionSubmited && !isCorrect && <p>Você Errou!</p>} */}
         </AlternativesForm>
       </Widget.Content>
     </Widget>

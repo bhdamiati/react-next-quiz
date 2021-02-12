@@ -1,10 +1,10 @@
 {
-    "bg": "assets/images/space_ghost_undertale.jpeg",
+    "bg": "assets/images/space_ghost_undertale.webp",
     "title": "Undertale Quiz",
     "description": "Test your knowledge about Undertale.",
     "questions": [
       {
-        "image": "https://media1.tenor.com/images/81763732e6b419909b27df3b3c982872/tenor.gif?itemid=5413221",
+        "image": "assets/images/flowey.gif",
         "title": "Who is the first monster we meet at the very beginning of the game?",
         "description": "You shouldn't judge a book by its cover.",
         "answer": 1,
@@ -16,7 +16,7 @@
         ]
       },
       {
-        "image": "https://media1.tenor.com/images/30c1c94a4958bc0474433c57229453a3/tenor.gif?itemid=14568050",
+        "image": "assets/images/mad_toriel.gif",
         "title": "Which classic game was the major inspiration in the making of Undertale?",
         "description": "Ness is my name, baseball is my game!",
         "answer": 0,
@@ -29,15 +29,15 @@
       }
     ],
     "external": [
-      ""
+      "https://aluraquiz-css.omariosouto.vercel.app/",
+      "https://aluraquiz-marvel.omariosouto.vercel.app/"
     ],
     "theme": {
       "colors": {
-        "primary": "#000",
-        "secondary": "#FFF",
-        "mainBg": "#011B3E",
+        "primary": "#FFFFFF",
+        "secondary": "#000000",
+        "mainBg": "#000000",
         "contrastText": "#FFFFFF",
-        "highlightText": "#FFFF00",
         "wrong": "#FF0000",
         "success": "#4CAF50"
       },

@@ -39,7 +39,10 @@ const { theme } = db;
 export default function App({ Component, pageProps }) {
   return (
     <>
-      <Head />
+      <Head>
+        <link rel="icon" href="assets/icons/favicon.ico" type="image/x-icon" />
+        <meta property="og:image" content="assets/images/ogimg.png" />
+      </Head>
       <ThemeProvider theme={theme}>
         <GlobalStyle />
         {/* eslint-disable-next-line react/jsx-props-no-spreading */}

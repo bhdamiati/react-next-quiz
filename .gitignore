@@ -1,5 +1,12 @@
 # See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
 
+# VisualStudioCode
+.vsCode/*
+!.vsCode/settings.json
+!.vsCode/tasks.json
+!.vsCode/launch.json
+!.vsCode/extensions.json
+
 # dependencies
 /node_modules
 /.pnp
